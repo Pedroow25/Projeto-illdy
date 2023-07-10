@@ -25,6 +25,8 @@
 
         <style type="text/css">
 
+          
+
 
             /* Barra de navegação
 			--------------------------------*/
@@ -115,7 +117,7 @@
 			}
 
 			.conteudo-titulo span.titulo{
-                background-color: white;
+        background-color: white;
 				padding: 18px;
 				font-size: 25px;
 				letter-spacing:5px ;
@@ -125,6 +127,9 @@
 
 
 			}
+                
+            /* paragráfos
+            -------------------*/
 
             .para1{
                 color: white;
@@ -133,12 +138,262 @@
                 padding-right: 20%;
             }
 
+            .para2{
+                padding-top: 30px;
+                padding-left:80px;
+                padding-right: 60px;
+            }
+
+
+            .para3{
+                padding-left: 80px;
+                padding-right:60px ;
+
+            }
+
+            .para4{
+                padding-left: 80px;
+                padding-right: 60px;
+
+            }
+
+
+            /*Barras de progressos
+            ----------------------*/
+
+            .container-progress1{
+            padding-left: 100px;
+          }
+
+           .progress-bar1 {
+            width: 300px;
+            height: 3px;
+            background-color: #e0e0e0;
+            position:relative;
+          
+          
+            
+            
+          }
+
+          .progress1 {
+            width: 60%;
+            height: 100%;
+            background-color: rgb(255, 124, 72);
+            
+          }
+
+          .ball1 {
+            width: 10px;
+            height: 10px;
+            background-color:rgb(255,124, 72);
+            border-radius: 50%;
+            position: absolute;
+            top: -3px;
+            left: 60%;
+            transform: translateX(-50%);
+          
+          }
+
+          
+
+
+
+
+
+          .container-progress2{
+            padding-left: 420px;
+          }
+
+          .progress-bar2 {
+            width: 300px;
+            height: 3px;
+            background-color: #e0e0e0;
+            position:relative;
+          }
+
+          .progress2 {
+            width: 82%;
+            height: 100%;
+            background-color: rgb(252, 255, 72);
+            
+          }
+
+          .ball2 {
+            width: 10px;
+            height: 10px;
+            background-color:rgba(252, 255, 72);
+            border-radius: 50%;
+            position: absolute;
+            top: -3px;
+            left: 82%;
+            transform: translateX(-50%);
+          
+          }
+
+
+
+
+          .container-progress3{
+            padding-left: 430px;
+            padding-right: 50px;
+          }
+
+          .progress-bar3 {
+            width: 300px;
+            height: 3px;
+            background-color: #e0e0e0;
+            position:relative;
+        
+          }
+
+          .progress3 {
+            width: 86%;
+            height: 100%;
+            background-color: purple;
+            
+          }
+
+          .ball3 {
+            width: 10px;
+            height: 10px;
+            background-color:purple;
+            border-radius: 50%;
+            position: absolute;
+            top: -3px;
+            left: 86%;
+            transform: translateX(-50%);
+          
+          }
+
+
+           /*Botões
+            ----------------------*/
+
+    .header-button-one{
+      margin-top: 10px;
+      margin-bottom: 10px;
+      background-color: rgba( 0, 0, 0, .2 );
+
+    }
+
+      .header-button-two {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      }
+
+         .header-button-one {
+          width: auto;
+          height: 63px;
+          line-height: 57px;
+          background: rgba(255, 255, 255, 0.2);
+          margin: 0 15px;
+          padding: 0 70px;
+          display: inline-block;
+          border: 3px solid #fff;
+          border-radius: 3px;
+          font-weight: 700;
+          font-size: 16px;
+          color: #fff;
+          -webkit-transition: all 0.3s;
+          -moz-transition: all 0.3s;
+          -o-transition: all 0.3s;
+          transition: all 0.3s;
+          font-family: "Lato";
+          min-width: 242px;
+      }
+      a {
+          color: #8c979e;
+      }
+      a {
+          color: #337ab7;
+          text-decoration: none;
+      }
+      a {
+          background-color: transparent;
+      }
+      * {
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+      }
+      folha de estilos de agente de usuário
+      a:-webkit-any-link {
+          color: -webkit-link;
+          cursor: pointer;
+          text-decoration: underline;
+      }
+
+
+        .header-button-two {
+        width: auto;
+        height: 63px;
+        line-height: 63px;
+        background: #f1d204;
+        margin: 0 15px;
+        padding: 0 70px;
+        display: inline-block;
+        border-radius: 3px;
+        font-weight: 700;
+        font-size: 16px;
+        color: #fff;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+        font-family: "Lato";
+        min-width: 242px;
+    }
+    a {
+        color: #8c979e;
+    }
+    a {
+        color: #337ab7;
+        text-decoration: none;
+    }
+    a {
+        background-color: transparent;
+    }
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+
+
+
+
+
+
 
 		</style>
+    
+    
 		
 	</head>
+
+
+
 	<body>
 
+
+
+    <script>
+      function updateProgress() {
+      var progressBar = document.querySelector('.progress');
+      var ball = document.querySelector('.ball');
+      progressBar.style.width = progress + '%';
+      ball.style.left = progress + '%';
+    }
+  </script>
+    
+    <!-- / Exemplo de uso: chame a função updateProgress() com um valor entre 0 e 100 para atualizar o progresso.
+    updateProgress(50);-->
+
+  
+
+        
         
 
 		<div class="caixa1">
@@ -202,8 +457,8 @@
                 </p>
 
                 
-                <a href="https://colorlib.com/wp/themes/illdy/" title="Learn more" class="header-button-one">Learn more</a>
-                <a href="https://colorlib.com/wp/themes/illdy/" title="Download" class="header-button-two">Download</a>
+                <a href="Index.html" title="Learn more" class="header-button-one">Learn more</a>
+                <a href="Index.html" title="Download" class="header-button-two">Download</a>
         
 
             </div>  
@@ -212,12 +467,46 @@
 
 		<div class="conteudo">
 			<h3>About</h3>
-			<p>It is an amazng one-page theme with great features that offers an incredible experience. It is easy to install, make changes, adapt for your business. A modern design with clean lines and styling for a wide variety of content, exactly how a business design should be. You can add as many images as you want to the main header area and turn them into slider.</p>
+			<p class="para2">It is an amazng one-page theme with great features that offers an incredible experience. It is easy to install, make changes, adapt for your</p> 
+            <p class="para3">A modern design with clean lines and styling for a wide variety of content, exactly how a business design should be. You can add </p>
+            <p class="para4">as many images as you want to the main header area and turn them into slider.</p>
 		
         
         </div>
 
+        <div class="container-progress1">
+        <div class="progress-bar1">
+          <div class="progress1"></div>
+          <div class="ball1"></div>
+        </div>
 
+        <div class="container-progress2">
+          <div class="progress-bar2">
+            <div class="progress2"></div>
+            <div class="ball2"></div>
+          </div>
+
+          <div class="container-progress3">
+            <div class="progress-bar3">
+              <div class="progress3"></div>
+              <div class="ball3"></div>
+            </div>
+
+        
+
+        
+
+
+
+
+        </div>
+
+
+        <hr>
+        
+
+        
+    
           
 
         
