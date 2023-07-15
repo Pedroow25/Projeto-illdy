@@ -476,33 +476,48 @@
       }
 
       .tab {
-        display: none;
+        display: flex;
+      }
+
+      .testimonial-text{
+        padding-top: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+        
       }
 
       .testimonial-popup {
         position: absolute;
-        top: 60%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         width: 80%;
-        height: 200px;
+        height: 150px;
         background-color:#6a4d8a ;
         padding: 10px;
         text-align: center;
         color: white;
       }
 
-      h2{
-        align-items: center;
+      .testimonial-popup::before {
+        content: "";
+        position: absolute;
+        bottom: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid #6a4d8a;
       }
 
-      .testimonial-image {
-        width: 120px;
-        border-radius: 50%;
-        margin-bottom: 5px;
-        align-items: center;
-        
-         
+     
+      .testimonial-image.center-image {
+       border-radius: 50%;
+       position: absolute;
+       top: 20%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+
       }
 
       .tab-bullets {
@@ -527,7 +542,24 @@
       }
 
       .show {
-        display: block;
+        display: flex;
+      }
+
+      .titulo{
+
+        margin-top: 10px;
+        padding-left: 43%;
+        color: white;
+        font-weight: 700;
+        
+      }
+
+      .testimonial-paragrafo{
+        text-align: center;
+        padding-top: 420px;
+        color: white;
+        font-size: 20px;
+        font-weight: 800;
       }
 
 
@@ -682,33 +714,55 @@
         
   
           <div class="containertest">
-            
             <div class="background-image">
             <div class="testimonial-tabs">
-              <h2>Testimonials</h2>
               <div class="tab" id="tab1">
-                <img class="testimonial-image" src="Imagens/imgtest1.png">
+                <h2 class="titulo">Testimonials</h2>
+                <img class="testimonial-image center-image" src="Imagens/imgtest1.png">
                 <div class="testimonial-popup">
-                  <p class="testimonial-text">Depoimento 1</p>
+                  <H6 class="testimonial-text">"Awesome theme with great design and awesome&nbsp;support. 
+                    If you don’t know how to code your own WordPress theme, but you still want a good-looking website for your business, 
+                    Illdy might be exactly what you need. 
+                    It is a slick theme with a lot of of features to choose from."</H6>
                 </div>
+                <p class="testimonial-paragrafo">Mike Muller</p>
               </div>
+    
               <div class="tab" id="tab2">
-                <img class="testimonial-image" src="Imagens/imgtest2.png">
+                <h2 class="titulo">Testimonials</h2>
+                <img class="testimonial-image center-image" src="Imagens/imgtest2.png">
                 <div class="testimonial-popup">
-                  <p class="testimonial-text">Depoimento 2</p>
+                  <H6 class="testimonial-text">"Awesome theme with great design and awesome&nbsp;support. 
+                    If you don’t know how to code your own WordPress theme, but you still want a good-looking website for your business, 
+                    Illdy might be exactly what you need. 
+                    It is a slick theme with a lot of of features to choose from."</H6>
                 </div>
+                <p class="testimonial-paragrafo">Jhon Doe</p>
               </div>
+
               <div class="tab" id="tab3">
-                <img class="testimonial-image" src="Imagens/imgtest3.png">
+                <h2 class="titulo">Testimonials</h2>
+                <img class="testimonial-image center-image" src="Imagens/imgtest3.png">
                 <div class="testimonial-popup">
-                  <p class="testimonial-text">Depoimento 3</p>
+                  <H6 class="testimonial-text">"Awesome theme with great design and awesome&nbsp;support. 
+                    If you don’t know how to code your own WordPress theme, but you still want a good-looking website for your business, Illdy might be exactly what you need. 
+                    It is a slick theme with a lot of of features to choose from. 
+                    You can customize whatever section you want and you can rest assure that no 
+                    matter what device your website is viewed on – it looks great."</H6>
                 </div>
+                <p class="testimonial-paragrafo">Aigars Silkalns</p>
               </div>
               <div class="tab" id="tab4">
-                <img class="testimonial-image" src="Imagens/imgtest4.png">
+                <h2 class="titulo">Testimonials</h2>
+                <img class="testimonial-image center-image" src="Imagens/imgtest4.png">
                 <div class="testimonial-popup">
-                  <p class="testimonial-text">Depoimento 4</p>
+                  <H6 class="testimonial-text">"Awesome theme with great design and awesome&nbsp;support. 
+                    If you don’t know how to code your own WordPress theme, but you still want a good-looking website for your business, Illdy might be exactly what you need. 
+                    It is a slick theme with a lot of of features to choose from. 
+                    You can customize whatever section you want and you can rest assure that no 
+                    matter what device your website is viewed on – it looks great."</H6>
                 </div>
+                <p class="testimonial-paragrafo">Jane Smith</p>
               </div>
             </div>
             <div class="tab-bullets">
